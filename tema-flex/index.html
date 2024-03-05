@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefan Andrei Tema FlexBox</title>
+    <style>
+        .main-container {
+          border-radius: 14px;
+          box-shadow: 8px 6px 18px -6px rgba(0, 0, 0, 0.25);
+          background-color: rgba(168, 192, 255, 0.17);
+          max-width: 879px;
+          padding: 16px 32px;
+          flex-direction: column;
+          margin: 0 auto;
+        }
+
+        .header {
+          display: flex;
+          justify-content: space-between;
+          gap: 17px;
+          color: #000;
+          white-space: nowrap;
+        }
+
+        .title {
+          text-transform: uppercase;
+          flex-grow: 1;
+          font: 700 48px Inter, sans-serif;
+        }
+
+        .navigation {
+          align-self: start;
+          display: inline-flex;
+          gap: 10px;
+          font-size: 20px;
+          font-weight: 400;
+          text-transform: lowercase;
+          padding: 5px 0;
+        }
+
+        .nav-item {
+          font-family: Inter, sans-serif;
+          justify-content: center;
+          border-radius: 32px;
+          border-right: 8px solid #000;
+          background-color: transparent;
+          flex-grow: 1;
+          padding: 11px 32px;
+        }
+        .nav-item-active {
+          font-family: Inter, sans-serif;
+          justify-content: center;
+          border-radius: 32px;
+          border-right: 8px solid #000;
+          background-color: #da2929ad;
+          flex-grow: 1;
+          padding: 11px 32px;
+        }
+        .content-section {
+          margin-top: 8px;
+        }
+
+        .content-row {
+          gap: 20px;
+          display: flex;
+        }
+
+        .text-column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 54%;
+          margin-left: 0px;
+        }
+
+        .text-block {
+          display: flex;
+          flex-direction: column;
+          align-self: stretch;
+          color: #272d38;
+          text-transform: capitalize;
+          margin: auto 0;
+        }
+
+        .main-heading {
+          font: 700 43px/43px Inter, sans-serif;
+        }
+
+        .subtext {
+          margin-top: 38px;
+          font: 400 18px/27px Inter, sans-serif;
+        }
+
+        .cta-button {
+          border-radius: 8px;
+          background-color: #8eadd5;
+          align-self: start;
+          margin-top: 20px;
+          justify-content: center;
+          color: #fff;
+          white-space: nowrap;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 14px 25px;
+          font: 600 12px/229% Inter, sans-serif;
+        }
+
+        .image-column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 46%;
+          margin-left: 20px;
+        }
+
+        .image {
+          object-position: center;
+          width: 100%;
+          flex-direction: column;
+        }
+
+        .free-zone {
+          align-items: start;
+          border: 1px solid #000;
+          margin-top: 8px;
+          color: #000;
+          text-transform: uppercase;
+          padding: 25px 60px 431px 22px;
+          font: 400 20px Arial, sans-serif;
+        }
+
+    
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .title, .navigation {
+    width: 100%; 
+  }
+
+  .navigation {
+    margin-top: 10px; 
+  }
+
+  .content-row {
+    flex-direction: column;
+  }
+
+  .text-column, .image-column {
+    width: 100%;
+  }
+
+  .image-column {
+    margin-top: 10px; 
+  }
+}
+
+      
+    </style>
+</head>
+<body>
+<div class="main-container">
+    <div class="header">
+      <div class="title">Stefan Andrei</div>
+      <div class="navigation">
+        <div class="nav-item-active">Acasă</div>
+        <div class="nav-item">Servicii</div>
+        <div class="nav-item">Contact</div>
+      </div>
+    </div>
+    <div class="content-section">
+      <div class="content-row">
+        <div class="text-column">
+          <div class="text-block">
+            <div class="main-heading">
+              Building digital products, brands & experience
+            </div>
+            <div class="subtext">
+              Digital Agency is your online team management tool that's easy and prompt
+              <br />
+            </div>
+            <div class="cta-button">Contact Us</div>
+          </div>
+        </div>
+        <div class="image-column">
+          <img class="image" src="idea.png"/>
+        </div>
+      </div>
+    </div>
+    <div class="free-zone">
+      Zonă liberă, în care poți să adaugi absolut orice vrei
+    </div>
+  </div>
+</body>
+</html>
