@@ -1,0 +1,170 @@
+body {
+    font-family: 'Inika', serif;
+    padding: 0;
+    background-image: url('../proiect-html-css/images/background.jpg');
+    background-size:cover;
+    background-position: center ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+main   {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    color: #39edf3db; /* Culoarea textului */
+    border: 2px solid rgba(75, 216, 216, 0.362); /* Bordura subtilă teal */
+    padding: 10px 15px; /* Spațiu în interiorul bordurii */
+    border-radius: 10px 25px; /* Raze diferite pentru colțuri */
+    box-shadow: inset 0 0 10px rgba(234, 255, 255, 0.521); /* Umbra interioară subtilă */
+    background-color: transparent; /* Fundal alb pentru a contrasta cu umbra și bordura */
+    display: flex; /* Permite aplicarea padding-ului și altor stiluri de bloc */
+    text-align: center; /* Centrează textul în interiorul logo-ului */
+    max-width: 200px; /* Lățime maximă pentru logo, ajustează după necesitate */
+    overflow-wrap: break-word; 
+    margin-left: 30px;
+    margin-top: 20px;
+}   
+    
+        
+header {
+    display: flex; /* Utilizează flexbox pentru alinierea elementelor */
+    justify-content: space-between; /* Distribuie spațiu între logo și containerul nav */
+    align-items: center; /* Centrează elementele pe verticală */
+    padding: 0 30px; /* Adaugă un padding la header pentru spațiu la marginile paginii */
+    font-size: 20px;
+}
+ 
+
+
+.container {
+    max-width: 1200px;
+    width: 100%; /* Asigură-te că container-ul ocupă lățimea completă */
+    margin: 0 auto; /* Centrează container-ul */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Permite container-ului să se extindă */
+    justify-content: flex-end;
+}
+.banner {
+    display: inline;
+    font-weight: 700;
+    font-size: 1.5em;
+    padding-top: 1.5em;
+    width: 60%;
+    color: rgba(0, 255, 255, 0.554);
+    margin-left: 15rem;
+}
+ 
+
+.nav {
+    display: flex; /* Asigură că elementele navbar-ului sunt afișate pe orizontală */
+    justify-content: center; /* Centrează elementele navbar-ului */
+    align-items: center; /* Alinează elementele pe verticală în centru */
+    list-style: none; /* Elimină marcatorii de listă */
+    padding-left: 0; /* Elimină padding-ul implicit la stânga pentru lista neordonată */
+}
+
+.nav li {
+    display: inline-block; /* Afișează elementele listei pe orizontală */
+    margin: 0 20px; /* Adaugă spațiu între elementele listei */
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+
+.nav a:hover,
+.nav a:focus {
+    color: rgb(0, 166, 255);
+    background-color: #9898986a;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s, color 0.3s, ease-out 0.3s;
+}
+ 
+ 
+ 
+ .nav a:active {
+    color: black;
+    background-color: slategrey;
+    border: 5px;
+    outline:none;
+ }
+
+.content {
+   display: flex;
+    justify-content: center; /* Centrează conținutul pe orizontală */
+    gap: 20px; 
+}
+
+    .content > div {
+        flex-basis: calc(33.333% - 20px); /* Calculează lățimea fiecărui div din .content, scăzând gap-ul */
+        text-align: center; /* Centrează textul în div-uri */
+        padding: 20px;
+        background-color: rgba(86, 98, 100, 0.483);
+        font-size: 1rem;
+        text-decoration: none;
+        color: rgba(32, 248, 255, 0.774);
+}   
+
+.content, h2 {
+    color: rgba(20, 24, 26, 0.785);
+    background-color: rgba(67, 169, 209, 0.107);
+    
+}
+    
+
+.nav a, .contact-button {
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+
+.contact-button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px; /* Mărimea fontului mai mică decât la logo */
+    color: #ffffffc2; /* Culoarea textului */
+    border: 2px solid rgba(75, 216, 216, 0.362); /* Bordura subtilă teal */
+    padding: 8px 20px; /* Spațiu în interiorul bordurii, puțin mai mic decât la logo */
+    border-radius: 15px 10px; /* Raze diferite pentru colțuri, puțin mai mici decât la logo */
+    box-shadow: inset 0 0 8px rgba(234, 255, 255, 0.521); /* Umbra interioară subtilă, puțin mai puțin pronunțată decât la logo */
+    background-color: transparent; /* Fundal  */
+    cursor: pointer; /* Cursorul mouse-ului se schimbă în pointer pentru a indica un element clicabil */
+    text-decoration: none; /* Elimină sublinierea textului pentru link-uri */
+    display: inline-block; /* Permite aplicarea padding-ului și altor stiluri de bloc */
+    text-align: center; /* Centrează textul în interiorul butonului */
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 30px;
+}
+
+   
+    
+  
+
+
+
+
+.contact-button:hover, .contact-button:focus {
+   
+    text-decoration: none; /* Elimină sublinierea textului */
+    transition: all 0.3s ease-in,  color 0.5s ease-out;
+    background-color: rgba(75, 216, 216, 0.362); /* Schimbă culoarea de fundal la hover/focus */
+    color: #fff; /* Schimbă culoarea textului în alb la hover/focus */
+
+}
