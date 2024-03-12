@@ -86,3 +86,36 @@ header {
 .service h1 {
     text-align: center;
 }
+
+@media (min-width: 320px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    .nav li {
+        margin: 0 10px; /* Spațiu redus între elemente */
+    }
+}
+@media (min-width: 481px) {
+    .logo {
+        font-size: 30px; /* Mărime font ajustată pentru tablete */
+    }
+
+    .nav li {
+        margin: 0 15px; /* Spațiu mărit între elemente */
+    }
+
+   
+}
+
+/* Stiluri pentru ecrane mari (peste 770px) */
+@media (min-width: 770px) {
+
+    
+
+    .nav li {
+        margin: 0 20px; /* Spațiu între elementele navbar-ului */
+    }
+
+   
+}
