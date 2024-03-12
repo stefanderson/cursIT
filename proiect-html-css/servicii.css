@@ -104,14 +104,18 @@ header {
     .nav li {
         margin: 0 15px; /* Spațiu mărit între elemente */
     }
-
+    .nav {
+        padding: 2px;
+    }
    
 }
 
 /* Stiluri pentru ecrane mari (peste 770px) */
 @media (min-width: 770px) {
 
-    
+    .nav {
+        display: block;
+    }
 
     .nav li {
         margin: 0 20px; /* Spațiu între elementele navbar-ului */

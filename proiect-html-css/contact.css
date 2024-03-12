@@ -77,3 +77,28 @@ header {
     font-size: large;
     align-content: center;
 }
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stivește elementele navbar-ului vertical */
+        margin-right: 0; /* Elimină marja dreaptă adăugată anterior */
+    }
+
+    .nav li {
+        margin: 5px 0; /* Ajustează spațiul între elementele navbar-ului pentru a evita aglomerarea */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Schimbă direcția header-ului la coloană pentru a evita suprapunerea cu logo-ul */
+    }
+
+    .logo, .nav {
+        margin-top: 10px; /* Adaugă un spațiu suplimentar în partea de sus pentru lizibilitate */
+    }
+
+    .contact-info {
+        font-size: small; /* Redu dimensiunea fontului pentru informațiile de contact */
+    }
+}

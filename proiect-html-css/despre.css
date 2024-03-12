@@ -104,3 +104,37 @@ p {
     font-size: 1.3rem;
 }
 
+@media (max-width: 768px) {
+    .logo, .nav a {
+        font-size: 20px; /* Redu font-size pentru ecrane medii */
+        position: static;
+    }
+
+    .nav li {
+        margin: 0 10px; /* Redu spațiul între elementele navbar pentru ecrane medii */
+    }
+
+    .services-section, .service, .about h2, p {
+        padding: 1rem; /* Redu padding-ul pentru ecrane medii */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 15px; /* Redu font-size pentru ecrane mici */
+        left: 1rem; /* Ajustează poziția logo-ului pentru a economisi spațiu */
+        position: static;
+    }
+
+    .nav {
+        flex-direction: row; /* Stivuiește elementele navbar vertical pe ecrane mici */
+    }
+
+    .nav li {
+        margin: 5px 0; /* Redu spațiul între elementele navbar pentru ecrane mici */
+    }
+
+    .services-section, .service, .about h2, p {
+        padding: 0.5rem; /* Redu și mai mult padding-ul pentru ecrane foarte mici */
+    }
+}
