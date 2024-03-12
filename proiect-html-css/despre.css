@@ -1,12 +1,13 @@
 body {
     font-family: 'Inika', serif;
     color: rgba(233, 233, 233, 0.94);
-    background-image: url('../proiect-html-css/images/background.jpg');
+    background-image: url('../proiect-html-css/bgimage.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    line-height: 1.5;
 }
 
 .logo {
@@ -19,8 +20,8 @@ body {
     box-shadow: inset 0 0 10px rgba(234, 255, 255, 0.521);
     background-color: transparent;
     z-index: 10; /* Asigură că logo-ul este deasupra nav-ului */
-    position: absolute; /* Poziționează logo-ul absolut */
-    left: 2rem; /* Alinează logo-ul la stânga cu un spațiu de 2rem */
+    position: absolute;
+    left: 2rem; 
      
 }
 
@@ -28,7 +29,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between; /* Aceasta va funcționa acum că logo-ul nu este poziționat absolut */
+    justify-content: space-between; 
     align-items: center;
     padding: 1rem 2rem;
 }
@@ -36,9 +37,6 @@ header {
 
 
      
-    
-    
-    
     .nav {
         display: flex; /* Afișează elementele navbar-ului pe orizontală */
         justify-content: center; /* Centrează elementele navbar-ului */
@@ -101,40 +99,40 @@ p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
     color: rgba(160, 236, 255, 0.864);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {
     .logo, .nav a {
-        font-size: 20px; /* Redu font-size pentru ecrane medii */
+        font-size: 20px; /* Reduce font-size pentru ecrane medii */
         position: static;
     }
 
     .nav li {
-        margin: 0 10px; /* Redu spațiul între elementele navbar pentru ecrane medii */
+        margin: 0 10px; /* Reduce spațiul între elementele navbar pentru ecrane medii */
     }
 
     .services-section, .service, .about h2, p {
-        padding: 1rem; /* Redu padding-ul pentru ecrane medii */
+        padding: 1rem; /* Reduce padding-ul pentru ecrane medii */
     }
 }
 
 @media (max-width: 480px) {
     .logo {
-        font-size: 15px; /* Redu font-size pentru ecrane mici */
+        font-size: 15px; /* Reduce font-size pentru ecrane mici */
         left: 1rem; /* Ajustează poziția logo-ului pentru a economisi spațiu */
         position: static;
     }
 
     .nav {
-        flex-direction: row; /* Stivuiește elementele navbar vertical pe ecrane mici */
+        flex-direction: row;
     }
 
     .nav li {
-        margin: 5px 0; /* Redu spațiul între elementele navbar pentru ecrane mici */
+        margin: 5px 0; /* Reduce spațiul între elementele navbar pentru ecrane mici */
     }
 
     .services-section, .service, .about h2, p {
-        padding: 0.5rem; /* Redu și mai mult padding-ul pentru ecrane foarte mici */
+        padding: 0.5rem; /* Reduce și mai mult padding-ul pentru ecrane foarte mici */
     }
 }

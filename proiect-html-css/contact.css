@@ -1,7 +1,7 @@
 body {
     font-family: 'Inika', serif;
     color: rgba(233, 233, 233, 0.94);
-    background-image: url('../proiect-html-css/images/background.jpg');
+    background-image: url('../proiect-html-css/bgimage.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;

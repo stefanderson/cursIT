@@ -1,12 +1,13 @@
 body {
     font-family: 'Inika', serif;
     padding: 0;
-    background-image: url('../proiect-html-css/images/background.jpg');
+    background-image: url('../proiect-html-css/bgimage.jpg');
     background-size:cover;
     background-position: center ;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    line-height: 1.6;
     
 
 }
@@ -20,7 +21,7 @@ main   {
 
 .logo {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     color: #39edf3db; /* Culoarea textului */
     border: 2px solid rgba(75, 216, 216, 0.362); /* Bordura subtilă teal */
     padding: 5px 10px; /* Spațiu în interiorul bordurii */
@@ -31,7 +32,7 @@ main   {
     text-align: center; /* Centrează textul în interiorul logo-ului */
     max-width: 200px; /* Lățime maximă pentru logo, ajustează după necesitate */
     overflow-wrap: break-word; 
-    margin: 10px;
+    
 }   
     
         
@@ -70,7 +71,7 @@ header {
     justify-content: center; /* Centrează elementele navbar-ului */
     align-items: center; /* Alinează elementele pe verticală în centru */
     list-style: none; /* Elimină marcatorii de listă */
-    padding-left: 0; /* Elimină padding-ul implicit la stânga pentru lista neordonată */
+    padding-left: 20px; /* Elimină padding-ul implicit la stânga pentru lista neordonată */
 }
 
 .nav li {
@@ -212,7 +213,7 @@ header {
     .logo {
         font-size: 35px; /* Mărime font pentru ecrane mari */
         padding: 10px 15px; /* Padding ajustat */
-        margin-left: 30px; /* Spațiu ajustat */
+        
     }
 
     .nav li {
