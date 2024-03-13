@@ -1,0 +1,37 @@
+.flag {
+    width: 220px;
+    height: 160px;
+    background-color: red;
+    position: relative;
+}
+
+.vertical, .horizontal {
+    position: absolute;
+    background-color: white;
+}
+
+.vertical {
+    width: 40px; /* Lățimea părții verticale albe */
+    height: 160px; /* Înălțimea întregului steag */
+    left: 60px; /* Poziționarea de la stânga la partea verticală albă */
+}
+
+.horizontal {
+    width: 220px; /* Lățimea întregului steag */
+    height: 40px; /* Înălțimea părții orizontale albe */
+    top: 60px; /* Poziționarea de sus a părții orizontale albe */
+}
+
+.blue {
+    background-color: blue;
+}
+
+.vertical.blue {
+    width: 20px; /* Lățimea părții verticale albastre */
+    left: 70px; /* Ajustează pentru a centra peste alb */
+}
+
+.horizontal.blue {
+    height: 20px; /* Înălțimea părții orizontale albastre */
+    top: 70px; /* Ajustează pentru a centra peste alb */
+}
